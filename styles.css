@@ -58,3 +58,7 @@ body {
 .gridrow {
     display:grid;
 }
+
+p{
+    font-size: 16px;
+}
