@@ -8,7 +8,7 @@ body,html {
 }
 body {
     background: rgb(0,183,255);
-    background: linear-gradient(180deg, rgba(0,183,255,1) 0%, rgba(0,194,255,1) 60%, rgb(0, 0, 0) 60%);
+    background: linear-gradient(180deg, rgba(0,183,255,1) 0%, rgba(0,194,255,1) 60%);
 }
 #hofud {
     width:100vw;
@@ -86,14 +86,8 @@ p{
     grid-template-rows: auto;
     padding-top:2%;
 }
-.millipartur {
-    height:10vh;
-    width:100%;
-    margin:auto;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgb(255, 235, 181) 0%, rgba(0,0,0,1) 100%);
-}
   .fotur {
       color:white;
-      background-color: black;
+      padding-top:7%;
+      background-color: rgb(34, 34, 34);
   }
