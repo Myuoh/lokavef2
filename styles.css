@@ -91,3 +91,33 @@ p{
       padding-top:7%;
       background-color: rgb(34, 34, 34);
   }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+    font-size: large;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 16px 16px;
+    transition: background 0.25s ease-in-out;
+    text-decoration: none;
+  }
+  li a:hover {
+    margin: 0;
+    background-color: rgb(86, 116, 59);
+  }
+  .fit {
+      height:18px;
+      overflow: hidden;
+  }
