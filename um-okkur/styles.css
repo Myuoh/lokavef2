@@ -47,15 +47,15 @@ body {
 .rightbackground {
     background-color: rgb(255, 235, 181);
     margin:auto;
-    padding-top:30px;
-    padding-bottom:20px;
+    padding-top:80px;
+    padding-bottom:60px;
 }
 #articles {
     background-color: rgb(255, 235, 181);
     display:grid;
     grid-template-rows: auto auto;
     grid-row-gap: 6%;
-    padding-bottom: 32%;
+    padding-bottom: 6%;
 }
 .gridcolumn {
     text-align: right;
@@ -147,6 +147,18 @@ p{
   #fyrrsig {
       padding-bottom:3%;
   }
+  #hador {
+      width:40%;
+  }
+  #gir {
+      width:55%;
+  }
+  #milli {
+      width:45%;
+  }
+  #xqc {
+      width:45%;
+  }
   @media screen and (min-width: 1550px) and (max-width:1840px) {
     #fyrrsig {
         padding-bottom:3%;
@@ -154,8 +166,21 @@ p{
     .fotur {
         margin: auto;
     }
+    #hador {
+        width:50%;
+        margin:auto;
+    }
+    #gir {
+        width:65%;
+    }
+    #milli {
+        width:65%;
+    }
+    #xqc {
+        width:65%;
+    }
     #articles {
-        padding-bottom: 42%;
+        padding-bottom: 10%;
     }
 }
 @media screen and (min-width: 1280px) and (max-width:1550px) {
@@ -165,8 +190,24 @@ p{
   .fotur {
       margin: auto;
   }
+  #hador {
+      width:50%;
+      margin:auto;
+  }
+  #gir {
+      width:65%;
+  }
+  #milli {
+      width:65%;
+  }
+  #xqc {
+      width:65%;
+  }
+  #hallbjorn {
+      width:65%;
+  }
   #articles {
-      padding-bottom: 52%;
+      padding-bottom: 12%;
   }
 }
 @media screen and (min-width: 1082px) and (max-width:1280px) {
@@ -176,14 +217,29 @@ p{
   .fotur {
       margin: auto;
   }
+  #hador {
+      width:100%;
+      margin:auto;
+  }
+  #gir {
+      width:100%;
+  }
+  #milli {
+      width:100%;
+  }
+  #xqc {
+      width:100%;
+  }
+  #hallbjorn {
+      width:100%;
+  }
   #articles {
-      padding-bottom: 67%;
+      padding-bottom: 12%;
   }
   .gridcolumn img, .gridcolumn2 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
   }
   .gridcolumn, .gridcolumn2 {
     width: 70% !important;
@@ -196,8 +252,30 @@ p{
   .fotur {
       margin: auto;
   }
+  #hador {
+      width:100%;
+      margin:auto;
+  }
+  #gir {
+      width:100%;
+  }
+  #milli {
+      width:100%;
+  }
+  #xqc {
+      width:100%;
+  }
+  #hallbjorn {
+      width:100%;
+  }
+  .pixlo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
   #articles {
-      padding-bottom: 82%;
+      padding-bottom: 12%;
   }
   .gridcolumn, .gridcolumn2 {
     width: 90% !important;
@@ -210,11 +288,31 @@ p{
   .fotur {
       margin: auto;
   }
+  #hador {
+      width:100%;
+      margin:auto;
+  }
+  #gir {
+      width:100%;
+      margin: auto;
+  }
+  #milli {
+      width:100%;
+      margin: auto;
+  }
+  #xqc {
+      width:100%;
+      margin: auto;
+  }
+  #hallbjorn {
+      width:100%;
+      margin: auto;
+  }
   .gridcolumn, .gridcolumn2 {
     width: 90% !important;
   }
   #articles {
-      padding-bottom: 122%;
+      padding-bottom: 16%;
   }
   .gridcolumn2 {
     width:100vw;
@@ -233,23 +331,32 @@ p{
   .gridcolumn img{
     grid-area: mynd;
   }
+  .pixlo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 }
 @media screen and (min-width: 533px) and (max-width:646px) {
     .menuinput {
-        display: none !important;
+        display:none !important;
     }
     .fit {
         position:fixed;
-        left:8px;
-        top:8px;
         z-index: 2;
+        width:100vw;
+        padding-top:1%;
+        padding-bottom:1%;
+        height:38px;
+        background-color: rgb(113, 155, 74);
     }
     .menubutton {
         position: fixed;
         right:0;
         color: white;
         cursor: pointer;
-        z-index: 3;
+        z-index: 3 !important;
         display: inline-block;
         font-size: 18px;
         padding: 5px 9px !important;
@@ -270,7 +377,12 @@ p{
         position: fixed;
         width: 100%;
         top: -20em !important;
-        z-index: 1;
+        z-index: 1 !important;
+        transition: all .5s ease !important;
+    }
+    .menuinput:checked~.topnav {
+        /*max-height: 500px;*/
+        top: 1.5em !important;
         transition: all .5s ease !important;
     }
     .topmenu {
@@ -281,6 +393,17 @@ p{
         padding: 0;
         width: 100vw;
         max-width: 100%;
+    }
+    .felasig {
+        display:block;
+    }
+    .topmenu {
+        list-style: none;
+        margin: 8px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        background-color: rgb(113, 155, 74);
     }
     .topmenu li {
         border-bottom: 1px solid #cecfd5;
@@ -294,43 +417,44 @@ p{
         padding: 6px 12px !important;
         text-decoration: none;
     }
-    .menuinput:checked~.topnav {
-        /*max-height: 500px;*/
-        top: 1.5em !important;
-        transition: all .5s ease !important;
-        width: 100%;
-    }
-    .felasig {
-        display:block;
-        position:fixed;
-        z-index: 1;
-        background-color: rgb(113, 155, 74);
-        width:100vw;
-        height:38px;
-        max-width:100%;
-    }
-    .topmenu {
-        list-style: none;
-        margin: 8px 0 0 0;
-        padding: 0;
-        width: 100vw;
-        max-width: 100%;
-        background-color: rgb(113, 155, 74);
-    }
     #fyrrsig {
         padding-bottom:3%;
     }
     .fotur {
         margin: auto;
     }
+    #hador {
+        width:100%;
+        margin:auto;
+    }
+    .pixlo {
+        width:100vw;
+        max-width: 100%;
+    }
+    #gir {
+        width:100%;
+        margin: auto;
+    }
+    #milli {
+        width:100%;
+        margin: auto;
+    }
+    #xqc {
+        width:100%;
+        margin: auto;
+    }
+    #hallbjorn {
+        width:100%;
+        margin: auto;
+    }
     .gridcolumn, .gridcolumn2 {
       width: 90% !important;
     }
     .nei {
-        display:none;
+        display:none !important;
     }
     #articles {
-        padding-bottom: 222%;
+        padding-bottom: 27%;
     }
     .gridcolumn2{
       width:100vw;
@@ -362,9 +486,12 @@ p{
     }
     .fit {
         position:fixed;
-        left:8px;
-        top:8px;
         z-index: 2;
+        width:100vw;
+        padding-top:1%;
+        padding-bottom:1%;
+        height:38px;
+        background-color: rgb(113, 155, 74);
     }
     .gridcolumn, .gridcolumn2 {
       width: 90% !important;
@@ -374,7 +501,7 @@ p{
         right:0;
         color: white;
         cursor: pointer;
-        z-index: 3;
+        z-index: 3 !important;
         display: inline-block;
         font-size: 18px;
         padding: 5px 9px !important;
@@ -395,7 +522,12 @@ p{
         position: fixed;
         width: 100%;
         top: -20em !important;
-        z-index: 0;
+        z-index: 1 !important;
+        transition: all .5s ease !important;
+    }
+    .menuinput:checked~.topnav {
+        /*max-height: 500px;*/
+        top: 1.5em !important;
         transition: all .5s ease !important;
     }
     .topmenu {
@@ -428,12 +560,6 @@ p{
     }
     .felasig {
         display:block;
-        position:fixed;
-        z-index: 1;
-        background-color: rgb(113, 155, 74);
-        width:100vw;
-        height:38px;
-        max-width:100%;
     }
     .topmenu {
         list-style: none;
@@ -445,9 +571,6 @@ p{
     }
     #fyrrsig {
         padding-bottom:3%;
-    }
-    #navbar{
-        display:none;
     }
     #fyrrsig {
         padding-bottom:3%;
@@ -462,6 +585,9 @@ p{
     .pixlo {
         width:100vw;
         max-width: 100%;
+    }
+    .nei {
+        display:none !important;
     }
     #gir {
         width:100%;
@@ -480,7 +606,7 @@ p{
         margin: auto;
     }
     #articles {
-        padding-bottom: 315%;
+        padding-bottom: 32%;
     }
     .gridcolumn2 {
       width:100vw;
