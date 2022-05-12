@@ -606,23 +606,32 @@ p{
         margin: auto;
     }
     #articles {
+        width:100vw;
+        max-width: 100%;
         padding-bottom: 32%;
     }
     .gridcolumn2 {
+        display:inline-grid;
       width:100vw;
+      max-width:100%;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
     .gridcolumn {
-      width:100vw;
-        grid-template-areas: "texti"
-                              "mynd";
+        display:inline-grid;
+        width:100vw;
+        max-width:100%;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
     }
     .gridcolumn div {
         grid-area: texti;
         text-align: left;
     }
     .gridcolumn img{
-      grid-area: mynd;
+        padding-bottom:5%;
+    }
+    .gridcolumn2 img{
+        width:80vw;
     }
   }
