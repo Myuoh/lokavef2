@@ -143,3 +143,36 @@ p{
   #fyrrsig {
       padding-bottom:3%;
   }
+  #hador {
+      width:40%;
+  }
+  #gir {
+      width:55%;
+  }
+  #milli {
+      width:45%;
+  }
+  #xqc {
+      width:45%;
+  }
+  @media screen and (min-width: 1200px) and (max-width:1840px) {
+    #fyrrsig {
+        padding-bottom:3%;
+    }
+    .fotur {
+        margin: auto;
+    }
+    #hador {
+        width:50%;
+        padding-bottom:40%;
+    }
+    #gir {
+        width:65%;
+    }
+    #milli {
+        width:65%;
+    }
+    #xqc {
+        width:65%;
+    }
+  }
