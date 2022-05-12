@@ -48,9 +48,6 @@ body {
 }
 #articles {
     background-color: rgb(255, 235, 181);
-    margin: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
     display:grid;
     grid-template-rows: auto auto;
     grid-row-gap: 6%;
@@ -64,7 +61,6 @@ body {
     grid-template-columns: auto auto;
     grid-gap:50px;
     grid-template-rows: auto;
-    padding-top:2%;
 }
 .gridrow {
     display:grid;
@@ -76,6 +72,9 @@ p{
 .gridimage {
     width:36em;
 }
+#xqc {
+    width:16em;
+}
 .gridcolumn2 {
     text-align: left;
     width:60%;
@@ -84,7 +83,6 @@ p{
     grid-template-columns: auto auto;
     grid-gap:50px;
     grid-template-rows: auto;
-    padding-top:2%;
 }
   .fotur {
       color:white;
@@ -141,4 +139,7 @@ p{
   }
   .vertmiddle {
       vertical-align: middle;
+  }
+  #fyrrsig {
+      padding-bottom:3%;
   }
