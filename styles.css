@@ -363,9 +363,9 @@ p{
     .topnav {
         /*max-height: 0;
         overflow: hidden; - transition height víbrar í símum,*/
-        position: fixed;
+        position: fixed !important;
         width: 100%;
-        top: -20em !important;
+        top: -20em;
         z-index: 0;
         transition: all .5s ease !important;
     }
@@ -394,6 +394,7 @@ p{
     .menuinput:checked~.topnav {
         /*max-height: 500px;*/
         top: 1.5em !important;
+        transition: all .5s ease !important;
         width: 100%;
     }
     .felasig {
@@ -468,6 +469,92 @@ p{
     }
   }
   @media screen and (min-width: 320px) and (max-width:534px) {
+    .menuinput {
+        display: none !important;
+    }
+    .fit {
+        position:fixed;
+        left:8px;
+        top:8px;
+        z-index: 2;
+    }
+    .menubutton {
+        position: fixed;
+        right:0;
+        color: white;
+        cursor: pointer;
+        z-index: 3;
+        display: inline-block;
+        font-size: 18px;
+        padding: 5px 9px !important;
+        transition: all .25s ease;
+    }
+    .menuinput:checked+.menubutton {
+        transform: rotate(0.25turn);
+        transition-timing-function: cubic-bezier(.66, -0.26, .38, 1.28);
+        transition-duration: 0.5s;
+        color: white;
+    }
+    .topmenu li a {
+        white-space: nowrap;
+    }
+    .topnav {
+        /*max-height: 0;
+        overflow: hidden; - transition height víbrar í símum,*/
+        position: fixed;
+        width: 100%;
+        top: -20em !important;
+        z-index: 0;
+        transition: all .5s ease !important;
+    }
+    .topmenu {
+        display:inline-grid;
+        grid-template-rows: auto auto auto auto auto !important;
+        list-style: none;
+        margin: 8px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        background-color: rgb(6, 94, 102);
+    }
+    .topmenu li {
+        border-bottom: 1px solid #cecfd5;
+    }
+    .topmenu li:last-child {
+        border-bottom: 0;
+    }
+    .topmenu a {
+        color: white;
+        display: block;
+        padding: 6px 12px !important;
+        text-decoration: none;
+    }
+    .menuinput:checked~.topnav {
+        /*max-height: 500px;*/
+        position: fixed;
+        top: 1.5em !important;
+        width: 100%;
+    }
+    .felasig {
+        display:block;
+        position:fixed;
+        z-index: 1;
+        background-color: rgb(113, 155, 74);
+        width:100vw;
+        height:38px;
+        max-width:100%;
+    }
+    .topmenu {
+        list-style: none;
+        margin: 8px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        background-color: rgb(113, 155, 74);
+    }
+    #fyrrsig {
+        padding-bottom:3%;
+    }
     #navbar{
         display:none;
     }
