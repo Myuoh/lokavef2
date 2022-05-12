@@ -70,10 +70,10 @@ p{
     font-size: 16pt;
 }
 .gridimage {
-    width:36em;
+    width:26em;
 }
-#xqc {
-    width:16em;
+.halldor {
+    filter: brightness(-100%) blur(10px);
 }
 .gridcolumn2 {
     text-align: left;
