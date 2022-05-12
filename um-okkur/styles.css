@@ -54,7 +54,7 @@ body {
     display:grid;
     grid-template-rows: auto auto;
     grid-row-gap: 6%;
-    padding-bottom: 6%;
+    padding-bottom: 500%;
 }
 .gridcolumn {
     text-align: right;

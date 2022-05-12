@@ -54,7 +54,7 @@ body {
     display:grid;
     grid-template-rows: auto auto;
     grid-row-gap: 6%;
-    padding-bottom: 6%;
+    padding-bottom: 32%;
 }
 .gridcolumn {
     text-align: right;
@@ -88,7 +88,8 @@ p{
 }
   .fotur {
       color:white;
-      padding-top:7%;
+      padding-bottom:3%;
+      padding-top:3%;
       background-color: rgb(34, 34, 34);
   }
 
@@ -137,4 +138,7 @@ p{
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+  }
+  .vertmiddle {
+      vertical-align: middle;
   }
