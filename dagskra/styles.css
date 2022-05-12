@@ -121,22 +121,20 @@ p{
       overflow: hidden;
   }
 
-  .lol{
-      margin-bottom: 10%;
-  }
   table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
     background-color: rgb(255, 235, 181);
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid black;
     text-align: left;
-    padding: 8px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 30px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
   }
   .vertmiddle {
       vertical-align: middle;
