@@ -240,7 +240,10 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
+  }
+  .gridcolumn, .gridcolumn2 {
+    width: 70% !important;
   }
 }
 @media screen and (min-width: 960px) and (max-width:1082px) {
@@ -270,10 +273,13 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
   }
   #articles {
       padding-bottom: 82%;
+  }
+  .gridcolumn, .gridcolumn2 {
+    width: 90% !important;
   }
 }
 @media screen and (min-width: 647px) and (max-width:960px) {
@@ -302,6 +308,9 @@ p{
   #hallbjorn {
       width:100%;
       margin: auto;
+  }
+  .gridcolumn, .gridcolumn2 {
+    width: 90% !important;
   }
   #articles {
       padding-bottom: 122%;
@@ -332,20 +341,23 @@ p{
 }
 @media screen and (min-width: 533px) and (max-width:646px) {
     .menuinput {
-        display: none !important;
+        display:none !important;
     }
     .fit {
         position:fixed;
-        left:8px;
-        top:8px;
         z-index: 2;
+        width:100vw;
+        padding-top:1%;
+        padding-bottom:1%;
+        height:38px;
+        background-color: rgb(113, 155, 74);
     }
     .menubutton {
         position: fixed;
         right:0;
         color: white;
         cursor: pointer;
-        z-index: 3;
+        z-index: 3 !important;
         display: inline-block;
         font-size: 18px;
         padding: 5px 9px !important;
@@ -363,10 +375,15 @@ p{
     .topnav {
         /*max-height: 0;
         overflow: hidden; - transition height víbrar í símum,*/
-        position: fixed !important;
+        position: fixed;
         width: 100%;
-        top: -20em;
-        z-index: 0;
+        top: -20em !important;
+        z-index: 1 !important;
+        transition: all .5s ease !important;
+    }
+    .menuinput:checked~.topnav {
+        /*max-height: 500px;*/
+        top: 1.5em !important;
         transition: all .5s ease !important;
     }
     .topmenu {
@@ -377,7 +394,17 @@ p{
         padding: 0;
         width: 100vw;
         max-width: 100%;
-        background-color: rgb(6, 94, 102);
+    }
+    .felasig {
+        display:block;
+    }
+    .topmenu {
+        list-style: none;
+        margin: 8px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        background-color: rgb(113, 155, 74);
     }
     .topmenu li {
         border-bottom: 1px solid #cecfd5;
@@ -390,29 +417,6 @@ p{
         display: block;
         padding: 6px 12px !important;
         text-decoration: none;
-    }
-    .menuinput:checked~.topnav {
-        /*max-height: 500px;*/
-        top: 1.5em !important;
-        transition: all .5s ease !important;
-        width: 100%;
-    }
-    .felasig {
-        display:block;
-        position:fixed;
-        z-index: 1;
-        background-color: rgb(113, 155, 74);
-        width:100vw;
-        height:38px;
-        max-width:100%;
-    }
-    .topmenu {
-        list-style: none;
-        margin: 8px 0 0 0;
-        padding: 0;
-        width: 100vw;
-        max-width: 100%;
-        background-color: rgb(113, 155, 74);
     }
     #fyrrsig {
         padding-bottom:3%;
@@ -444,13 +448,16 @@ p{
         width:100%;
         margin: auto;
     }
+    .gridcolumn, .gridcolumn2 {
+      width: 90% !important;
+    }
     .nei {
-        display:none;
+        display:none !important;
     }
     #articles {
         padding-bottom: 222%;
     }
-    .gridcolumn2 {
+    .gridcolumn2{
       width:100vw;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
@@ -459,6 +466,12 @@ p{
       width:100vw;
         grid-template-areas: "texti"
                               "mynd";
+    }
+    .gridcolumn2 *{
+        text-align:center;
+    }
+    .gridcolumn *{
+        text-align:center;
     }
     .gridcolumn div {
         grid-area: texti;
@@ -474,16 +487,22 @@ p{
     }
     .fit {
         position:fixed;
-        left:8px;
-        top:8px;
         z-index: 2;
+        width:100vw;
+        padding-top:1%;
+        padding-bottom:1%;
+        height:38px;
+        background-color: rgb(113, 155, 74);
+    }
+    .gridcolumn, .gridcolumn2 {
+      width: 90% !important;
     }
     .menubutton {
         position: fixed;
         right:0;
         color: white;
         cursor: pointer;
-        z-index: 3;
+        z-index: 3 !important;
         display: inline-block;
         font-size: 18px;
         padding: 5px 9px !important;
@@ -504,7 +523,12 @@ p{
         position: fixed;
         width: 100%;
         top: -20em !important;
-        z-index: 0;
+        z-index: 1 !important;
+        transition: all .5s ease !important;
+    }
+    .menuinput:checked~.topnav {
+        /*max-height: 500px;*/
+        top: 1.5em !important;
         transition: all .5s ease !important;
     }
     .topmenu {
@@ -537,12 +561,6 @@ p{
     }
     .felasig {
         display:block;
-        position:fixed;
-        z-index: 1;
-        background-color: rgb(113, 155, 74);
-        width:100vw;
-        height:38px;
-        max-width:100%;
     }
     .topmenu {
         list-style: none;
@@ -554,9 +572,6 @@ p{
     }
     #fyrrsig {
         padding-bottom:3%;
-    }
-    #navbar{
-        display:none;
     }
     #fyrrsig {
         padding-bottom:3%;
@@ -571,6 +586,9 @@ p{
     .pixlo {
         width:100vw;
         max-width: 100%;
+    }
+    .nei {
+        display:none !important;
     }
     #gir {
         width:100%;
