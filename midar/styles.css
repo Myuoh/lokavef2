@@ -251,6 +251,9 @@ p{
   .fotur {
       margin: auto;
   }
+  form {
+    width:60%;
+  }
   #hador {
       width:100%;
       margin:auto;
@@ -290,6 +293,10 @@ p{
   #hador {
       width:100%;
       margin:auto;
+  }
+  form {
+    width:80%;
+    padding-bottom:30% !important;
   }
   #gir {
       width:100%;
@@ -360,6 +367,11 @@ p{
         font-size: 18px;
         padding: 5px 9px !important;
         transition: all .25s ease;
+    }
+    form {
+      width:100%;
+      border-radius: 0%;
+      padding-bottom:40% !important;
     }
     .menuinput:checked+.menubutton {
         transform: rotate(0.25turn);
@@ -491,6 +503,18 @@ p{
         padding-bottom:1%;
         height:38px;
         background-color: rgb(113, 155, 74);
+    }
+    form {
+      width:100%;
+      grid-template-columns: auto;
+      border-radius: 0%;
+      padding-bottom:180% !important;
+    }
+    form div input{
+        justify-self: center;
+        align-self: center;
+        width:90vw;
+        max-width: 90%;
     }
     .gridcolumn, .gridcolumn2 {
       width: 90% !important;
