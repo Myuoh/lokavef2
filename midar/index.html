@@ -21,7 +21,65 @@
         <li><a href="../stadsetning/">Staðsetning</a></li>
         <li><a href="../">Heim</a></li>
           </ul>
-    </nav>
+    </nav><br><br><br><br><br><br>
+    <form class="rightbackground">
+        <div>
+            <label for="nafn">Fullt Nafn:</label><br>
+            <input type="text" name="nafn" required="" placeholder="Fullt Nafn"><br><br>
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" required="" placeholder="Tölvupóstur" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Vinsamlegast skrifaðu inn tölvupóst."><br><br>
+        </div>
+        <div>
+            <label for="simanumer" name="simanumer">Símanúmer</label><br>
+            <input type="tel" name="simanumer" required="" placeholder="Símanúmer" pattern="[0-9]{7}" title="Vinsamlegast skráið aðeins 7 tölustafi."><br><br>
+           </div>
+           <div>
+            <label for="dates">Veldu dagsetningu:</label><br>
+            <select id="dates" name="dates">
+                <option value="1812">18. Maí, 12:00</option>
+                <option value="1818">18. Maí, 18:00</option>
+                <option value="1912">19. Maí, 12:00</option>
+                <option value="1918">19. Maí, 18:00</option>
+                <option value="2512">25. Maí, 12:00</option>
+                <option value="2518">25. Maí, 18:00</option>
+                <option value="2612">26. Maí, 12:00</option>
+                <option value="2618">26. Maí, 18:00</option>
+            </select>
+        </div>
+        <div>
+            <label for="adr">Heimilisfang</label><br>
+            <input type="text" id="adr" name="address" required="" placeholder="Heimilisfang" title="Vinsamlegast skrifaðu inn heimilisfang."><br><br>
+        </div>
+        <div>
+            <label for="zip">Póstnúmer</label><br>
+            <input type="text" id="zip" name="zip" required="" placeholder="Póstnúmer" pattern="[0-9]{3}" title="Vinsamlegast skráið aðeins 3 tölustafi."><br><br>
+        </div>
+        <div>
+            <label for="cname">Nafn Kortaeiganda</label><br>
+            <input type="text" id="cname" name="cardname" required="" placeholder="Nafn Kortaeiganda" title="Vinsamlegast skrifaðu inn nafn."><br><br>
+        </div>
+        <div>
+            <label for="ccnum">Kortanúmer</label><br>
+            <input type="text" id="ccnum" name="cardnumber" required="" placeholder="Kortanúmer" pattern="[0-9]{16}"><br><br>
+        </div>
+        <div>
+            <label for="expmonth">Mánuður</label><br>
+            <input type="text" id="expmonth" name="expmonth" required="" placeholder="Exp. Mánuður" pattern="[0-9]{2}"><br><br>
+        </div>
+        <div>
+            <label for="expyear">Ár</label><br>
+            <input type="text" id="expyear" name="expyear" required="" placeholder="Exp. Ár" pattern="[0-9]{2}"><br><br>
+        </div>
+        <div>
+            <label for="expyear">CVV</label><br>
+            <input type="text" id="expyear" name="expyear" required="" placeholder="CVV" pattern="[0-9]{3}"><br><br>
+        </div>
+        <div>
+        <input class="senda" type="submit" value="Senda">
+        </div>
+    </form>
     <footer class="fotur">
         <h1 class="textcenter vertmiddle">Smype™  Inc. 2022<br>Einar og Friðrik</h1>
     </footer>
