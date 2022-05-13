@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto&display=swap');
 body,html {
     margin: 0;
     padding: 0;
 }
 * {
     box-sizing: border-box;
+}
+h1, h2, h3, p {
+    font-family: 'Roboto', sans-serif;
+}
+.felasig {
+    display:none;
 }
 body {
     background: rgb(0,183,255);
@@ -20,6 +26,9 @@ body {
     max-height: 65%;
     max-width: 65%;
     width: auto;
+    animation-name: bloonzoom;
+    animation-timing-function: cubic-bezier(.3,.02,0,.97);
+    animation-duration: 1s;
     height: auto;
     position: absolute;
     top: 0;
@@ -28,8 +37,13 @@ body {
     right: 0;
     margin: auto;
 }
+@keyframes bloonzoom {
+    from {transform: scale(0);}
+    to {transform:scale(1)}
+}
 #navbar{
     position:fixed;
+    top:0;
     color:white;
     z-index: 1;
     font-family: 'Luckiest Guy', cursive;
@@ -142,4 +156,484 @@ p{
   }
   #fyrrsig {
       padding-bottom:3%;
+  }
+  #hador {
+      width:40%;
+  }
+  #gir {
+      width:55%;
+  }
+  #milli {
+      width:45%;
+  }
+  #xqc {
+      width:45%;
+  }
+  @media screen and (min-width: 1550px) and (max-width:1840px) {
+    #fyrrsig {
+        padding-bottom:3%;
+    }
+    .fotur {
+        margin: auto;
+    }
+    #hador {
+        width:50%;
+        margin:auto;
+    }
+    #gir {
+        width:65%;
+    }
+    #milli {
+        width:65%;
+    }
+    #xqc {
+        width:65%;
+    }
+    #articles {
+        padding-bottom: 42%;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width:1550px) {
+  #fyrrsig {
+      padding-bottom:3%;
+  }
+  .fotur {
+      margin: auto;
+  }
+  #hador {
+      width:50%;
+      margin:auto;
+  }
+  #gir {
+      width:65%;
+  }
+  #milli {
+      width:65%;
+  }
+  #xqc {
+      width:65%;
+  }
+  #hallbjorn {
+      width:65%;
+  }
+  #articles {
+      padding-bottom: 52%;
+  }
+}
+@media screen and (min-width: 1082px) and (max-width:1280px) {
+  #fyrrsig {
+      padding-bottom:3%;
+  }
+  .fotur {
+      margin: auto;
+  }
+  #hador {
+      width:100%;
+      margin:auto;
+  }
+  #gir {
+      width:100%;
+  }
+  #milli {
+      width:100%;
+  }
+  #xqc {
+      width:100%;
+  }
+  #hallbjorn {
+      width:100%;
+  }
+  #articles {
+      padding-bottom: 67%;
+  }
+  .gridcolumn img, .gridcolumn2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .gridcolumn, .gridcolumn2 {
+    width: 70% !important;
+  }
+}
+@media screen and (min-width: 960px) and (max-width:1082px) {
+  #fyrrsig {
+      padding-bottom:3%;
+  }
+  .fotur {
+      margin: auto;
+  }
+  #hador {
+      width:100%;
+      margin:auto;
+  }
+  #gir {
+      width:100%;
+  }
+  #milli {
+      width:100%;
+  }
+  #xqc {
+      width:100%;
+  }
+  #hallbjorn {
+      width:100%;
+  }
+  .pixlo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  #articles {
+      padding-bottom: 82%;
+  }
+  .gridcolumn, .gridcolumn2 {
+    width: 90% !important;
+  }
+}
+@media screen and (min-width: 647px) and (max-width:960px) {
+  #fyrrsig {
+      padding-bottom:3%;
+  }
+  .fotur {
+      margin: auto;
+  }
+  #hador {
+      width:100%;
+      margin:auto;
+  }
+  #gir {
+      width:100%;
+      margin: auto;
+  }
+  #milli {
+      width:100%;
+      margin: auto;
+  }
+  #xqc {
+      width:100%;
+      margin: auto;
+  }
+  #hallbjorn {
+      width:100%;
+      margin: auto;
+  }
+  .gridcolumn, .gridcolumn2 {
+    width: 90% !important;
+  }
+  #articles {
+      padding-bottom: 122%;
+  }
+  .gridcolumn2 {
+    width:100vw;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+  }
+  .gridcolumn {
+    width:100vw;
+      grid-template-areas: "texti"
+                            "mynd";
+  }
+  .gridcolumn div {
+      grid-area: texti;
+      text-align: left;
+  }
+  .gridcolumn img{
+    grid-area: mynd;
+  }
+  .pixlo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 533px) and (max-width:646px) {
+    .menuinput {
+        display:none !important;
+    }
+    .fit {
+        position:fixed;
+        z-index: 2;
+        width:100vw;
+        padding-top:1%;
+        padding-bottom:1%;
+        height:38px;
+        background-color: rgb(113, 155, 74);
+    }
+    .menubutton {
+        position: fixed;
+        right:0;
+        color: white;
+        cursor: pointer;
+        z-index: 3 !important;
+        display: inline-block;
+        font-size: 18px;
+        padding: 5px 9px !important;
+        transition: all .25s ease;
+    }
+    .menuinput:checked+.menubutton {
+        transform: rotate(0.25turn);
+        transition-timing-function: cubic-bezier(.66, -0.26, .38, 1.28);
+        transition-duration: 0.5s;
+        color: white;
+    }
+    .topmenu li a {
+        white-space: nowrap;
+    }
+    .topnav {
+        /*max-height: 0;
+        overflow: hidden; - transition height víbrar í símum,*/
+        position: fixed;
+        width: 100%;
+        top: -20em !important;
+        z-index: 1 !important;
+        transition: all .5s ease !important;
+    }
+    .menuinput:checked~.topnav {
+        /*max-height: 500px;*/
+        top: 1.5em !important;
+        transition: all .5s ease !important;
+    }
+    .topmenu {
+        display:inline-grid;
+        grid-template-rows: auto auto auto auto auto !important;
+        list-style: none;
+        margin: 8px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+    }
+    .felasig {
+        display:block;
+    }
+    .topmenu {
+        list-style: none;
+        margin: 8px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        background-color: rgb(113, 155, 74);
+    }
+    .topmenu li {
+        border-bottom: 1px solid #cecfd5;
+    }
+    .topmenu li:last-child {
+        border-bottom: 0;
+    }
+    .topmenu a {
+        color: white;
+        display: block;
+        padding: 6px 12px !important;
+        text-decoration: none;
+    }
+    #fyrrsig {
+        padding-bottom:3%;
+    }
+    .fotur {
+        margin: auto;
+    }
+    #hador {
+        width:100%;
+        margin:auto;
+    }
+    .pixlo {
+        width:100vw;
+        max-width: 100%;
+    }
+    #gir {
+        width:100%;
+        margin: auto;
+    }
+    #milli {
+        width:100%;
+        margin: auto;
+    }
+    #xqc {
+        width:100%;
+        margin: auto;
+    }
+    #hallbjorn {
+        width:100%;
+        margin: auto;
+    }
+    .gridcolumn, .gridcolumn2 {
+      width: 90% !important;
+    }
+    .nei {
+        display:none !important;
+    }
+    #articles {
+        padding-bottom: 222%;
+    }
+    .gridcolumn2{
+      width:100vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .gridcolumn {
+      width:100vw;
+        grid-template-areas: "texti"
+                              "mynd";
+    }
+    .gridcolumn2 *{
+        text-align:center;
+    }
+    .gridcolumn *{
+        text-align:center;
+    }
+    .gridcolumn div {
+        grid-area: texti;
+        text-align: left;
+    }
+    .gridcolumn img{
+      grid-area: mynd;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width:534px) {
+    .menuinput {
+        display: none !important;
+    }
+    .fit {
+        position:fixed;
+        z-index: 2;
+        width:100vw;
+        padding-top:1%;
+        padding-bottom:1%;
+        height:38px;
+        background-color: rgb(113, 155, 74);
+    }
+    .gridcolumn, .gridcolumn2 {
+      width: 90% !important;
+    }
+    .menubutton {
+        position: fixed;
+        right:0;
+        color: white;
+        cursor: pointer;
+        z-index: 3 !important;
+        display: inline-block;
+        font-size: 18px;
+        padding: 5px 9px !important;
+        transition: all .25s ease;
+    }
+    .menuinput:checked+.menubutton {
+        transform: rotate(0.25turn);
+        transition-timing-function: cubic-bezier(.66, -0.26, .38, 1.28);
+        transition-duration: 0.5s;
+        color: white;
+    }
+    .topmenu li a {
+        white-space: nowrap;
+    }
+    .topnav {
+        /*max-height: 0;
+        overflow: hidden; - transition height víbrar í símum,*/
+        position: fixed;
+        width: 100%;
+        top: -20em !important;
+        z-index: 1 !important;
+        transition: all .5s ease !important;
+    }
+    .menuinput:checked~.topnav {
+        /*max-height: 500px;*/
+        top: 1.5em !important;
+        transition: all .5s ease !important;
+    }
+    .topmenu {
+        display:inline-grid;
+        grid-template-rows: auto auto auto auto auto !important;
+        list-style: none;
+        margin: 8px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        background-color: rgb(6, 94, 102);
+    }
+    .topmenu li {
+        border-bottom: 1px solid #cecfd5;
+    }
+    .topmenu li:last-child {
+        border-bottom: 0;
+    }
+    .topmenu a {
+        color: white;
+        display: block;
+        padding: 6px 12px !important;
+        text-decoration: none;
+    }
+    .menuinput:checked~.topnav {
+        /*max-height: 500px;*/
+        position: fixed;
+        top: 1.5em !important;
+        width: 100%;
+    }
+    .felasig {
+        display:block;
+    }
+    .topmenu {
+        list-style: none;
+        margin: 8px 0 0 0;
+        padding: 0;
+        width: 100vw;
+        max-width: 100%;
+        background-color: rgb(113, 155, 74);
+    }
+    #fyrrsig {
+        padding-bottom:3%;
+    }
+    #fyrrsig {
+        padding-bottom:3%;
+    }
+    .fotur {
+        margin: auto;
+    }
+    #hador {
+        width:100%;
+        margin:auto;
+    }
+    .pixlo {
+        width:100vw;
+        max-width: 100%;
+    }
+    .nei {
+        display:none !important;
+    }
+    #gir {
+        width:100%;
+        margin: auto;
+    }
+    #milli {
+        width:100%;
+        margin: auto;
+    }
+    #xqc {
+        width:100%;
+        margin: auto;
+    }
+    #hallbjorn {
+        width:100%;
+        margin: auto;
+    }
+    #articles {
+        padding-bottom: 315%;
+    }
+    .gridcolumn2 {
+      width:100vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    .gridcolumn {
+      width:100vw;
+        grid-template-areas: "texti"
+                              "mynd";
+    }
+    .gridcolumn div {
+        grid-area: texti;
+        text-align: left;
+    }
+    .gridcolumn img{
+      grid-area: mynd;
+    }
   }
