@@ -9,21 +9,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav id="navbar">
-        <ul>
-            <li style="float:left"><a href="../index.html"><img class="fit" src="../images/RedBloon.svg"></a></li>
-            <li><a href="../um-okkur/index.html">Um Okkur</a></li>
-            <li><a href="../midar/index.html">Kaupa Miða</a></li>
-            <li><a href="../dagskra/index.html">Dagskrá</a></li>
-            <li><a href="../stadsetning/index.html">Staðsetning</a></li>
-            <li><a href="../index.html">Heim</a></li>
-          </ul>
-    </nav>
+    <a href="../index.html"><img class="fit felasig" src="../images/RedBloon.svg"></a>
+    <input type="checkbox" class="menuinput felasig" id="toggle">
+    <label for="toggle" class="menubutton felasig">&#9776;</label>
+    <nav class="topnav" id="navbar">
+    <ul class="topmenu">
+        <li style="float:left"><a href="#home" class="nei"><img class="fit" src="../images/RedBloon.svg"></a></li>
+        <li><a href="../um-okkur/index.html">Um Okkur</a></li>
+        <li><a href="../midar/index.html">Kaupa Miða</a></li>
+        <li><a href="../dagskra/index.html">Dagskrá</a></li>
+        <li><a href="../stadsetning/index.html">Staðsetning</a></li>
+        <li><a href="../index.html">Heim</a></li>
+      </ul>
+      </nav>
     <br><br>
     <div id="articles">
         <h1 class="textcenter rightbackground">Dagskrá fyrir undankeppnir</h1>
         <div class="gridcolumn">
-            <img class="gridimage pixlo"src="../images/höl.jpg">
+            <img class="gridimage pixlo"src="../images/höl.jpg" id="höl">
             <div>
                 <h2>
                     Laugardalshöll
@@ -33,7 +36,7 @@
         </div>
         <div class="gridcolumn2">
             <p>Til að fá eins litla truflun og hægt er er ekki selt miða á loka keppnina heldur getur maður horft á strymi af því á skjá sem sett er á hallgrímskirkju. Keppendur verða settir saman í bragga út á landi sem enginn veit hvar þeir eru svo ekkert getur truflað</p>
-            <img class="gridimage pixlo"src="../images/broggers.jpg">
+            <img class="gridimage pixlo"src="../images/broggers.jpg" id="broggers">
         </div>
     </div>
     <footer class="fotur">
