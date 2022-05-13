@@ -6,6 +6,7 @@ body,html {
 * {
     box-sizing: border-box;
 }
+
 body {
     background: rgb(0,183,255);
     background: linear-gradient(180deg, rgba(0,183,255,1) 0%, rgba(0,194,255,1) 60%);
