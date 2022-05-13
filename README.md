@@ -1,3 +1,2 @@
-## poggerdogger?
-# Yes Sir!
-- poglingoggling dogglers
+# Lokaverkefni í Vefþróun 2
+Bloons TD 6 Reykjavíkurmót
