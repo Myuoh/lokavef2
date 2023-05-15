@@ -1,0 +1,6 @@
+body {
+    cursor: url("btd-cursor.png"), auto;
+}
+a:hover, input[type=submit] {
+    cursor: url("btd-pointer.png"), pointer;
+}
